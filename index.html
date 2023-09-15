@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top py-0" >
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top py-0" >
             <div class="container-fluid bg-warning">
               <a class="navbar-brand" href="index.html">
                 <img src="images/minia.jpg" alt="Une image de Gillou" width="75vw" height="75vh">
@@ -45,7 +45,40 @@
             </div>
           </nav>
     </header>
-    <div class="container-fluid">
+    <main>
+        <div class="container-fluid" style="margin: 0; padding: 0;">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slide1.jpg" class="d-block w-100" alt="Le disque d'or de Gilles">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide2.jpg" class="d-block w-100" alt="Le merch de Gilles">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide3.jpg" class="d-block w-100" alt="Blanc sans le n ça fait black">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+      <!--FOOTER-->
+
+      <div class="container-fluid">
         <footer class="container py-5">
           <div class="row justify-content-around">
             <div class="col-6 col-md-2 mb-3">
